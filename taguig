@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gazetteer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav input[type="search"] {
+            padding: 0.5rem;
+            width: 60%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem auto;
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+        #location-list {
+            flex: 1;
+            min-width: 250px;
+            margin-right: 1rem;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+        #location-list h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        #location-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #location-list li a {
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: #337ab7;
+            border-bottom: 1px solid #eee;
+        }
+        #location-list li a:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            flex: 3;
+            background: #fff;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        article header h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .coordinates {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .place-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Digital Gazetteer</h1>
+    </header>
+
+    <nav>
+        <form action="#" method="get">
+            <input type="search" id="search-box" name="query" placeholder="Search for a place...">
+        </form>
+    </nav>
+
+    <div class="container">
+        <aside id="location-list">
+            <h2>Browse Locations</h2>
+            <ul>
+                <li><a href="#taguig">Taguig</a></li>
+                <li><a href="#manila">Manila</a></li>
+                <li><a href="#cebu">Cebu City</a></li>
+                <li><a href="#davao">Davao City</a></li>
+                <li><a href="#palawan">Palawan</a></li>
+            </ul>
+        </aside>
+
+        <main id="gazetteer-content">
+            <article id="taguig">
+                <header>
+                    <h2>Taguig</h2>
+                </header>
+                <div class="coordinates">
+                    Coordinates: 14.5167° N, 121.0500° E
+                </div>
+                <img src="https://via.placeholder.com/600x400.png?text=Bonifacio+Global+City" alt="A bustling city skyline with modern buildings" class="place-image">
+                <section>
+                    <h3>Description</h3>
+                    <p>Taguig is a highly urbanized city in Metro Manila, Philippines. It is known for the Bonifacio Global City (BGC), one of the country's leading financial and lifestyle districts. Historically a fishing village, Taguig has experienced rapid growth and modernization in recent decades.</p>
+                </section>
+                <section>
+                    <h3>Key Information</h3>
+                    <ul>
+                        <li><strong>Country:</strong> Philippines</li>
+                        <li><strong>Region:</strong> National Capital Region (NCR)</li>
+                        <li><strong>Population:</strong> Approximately 886,722 (2020 census)</li>
+                        <li><strong>Landmarks:</strong> Bonifacio High Street, The Mind Museum, Venice Grand Canal Mall, American Cemetery and Memorial</li>
+                        <li><strong>Economy:</strong> Finance, real estate, retail, information technology</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Digital Gazetteer. Current as of June 10, 2025.</p>
+    </footer>
+
+</body>
+</html>
