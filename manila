@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gazetteer - Manila</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Applying the Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        /* Custom scrollbar for a better look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <svg class="h-8 w-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <h1 class="text-2xl font-bold text-gray-900">Digital Gazetteer</h1>
+                </div>
+                <div class="w-full max-w-xs">
+                    <div class="relative">
+                        <input type="search" placeholder="Search for a place..." class="w-full pl-10 pr-4 py-2 border rounded-full bg-gray-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                             <i data-lucide="search" class="h-5 w-5 text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div class="lg:flex lg:space-x-8">
+
+            <!-- Primary Content Area -->
+            <main class="flex-1">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg">
+                    
+                    <!-- Location Header -->
+                    <div class="mb-6">
+                        <h2 class="text-4xl font-bold tracking-tight text-gray-900">Manila</h2>
+                        <p class="text-lg text-gray-500 mt-1">Capital City of the Philippines</p>
+                    </div>
+
+                    <!-- Image Gallery -->
+                    <div class="mb-8">
+                        <img src="https://placehold.co/1200x600/e74c3c/ffffff?text=Rizal+Park+and+Manila+Skyline" alt="Skyline of Manila with Rizal Park in the foreground" class="w-full h-auto object-cover rounded-xl shadow-md">
+                    </div>
+
+                    <!-- Introduction -->
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Manila, the capital of the Philippines, is a densely populated bayside city with a rich and complex history. It is a city of contrasts, blending Spanish colonial architecture with modern skyscrapers. Its heart is the walled city of **Intramuros**, the historic core founded by the Spanish in the 16th century. Manila is the country's economic, political, social, and educational center.
+                    </p>
+
+                    <!-- Key Information Table -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                        <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-600">Coordinates</h4>
+                            <p class="text-lg font-mono">14.5995° N, 120.9842° E</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-600">Population (2020)</h4>
+                            <p class="text-lg">1,846,513</p>
+                        </div>
+                         <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-600">Demonym</h4>
+                            <p class="text-lg">Manileño / Manilan</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg border">
+                            <h4 class="font-semibold text-gray-600">Key Districts</h4>
+                            <p class="text-lg">Intramuros, Binondo, Malate, Ermita, Quiapo</p>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Sections -->
+                    <div class="space-y-8">
+                        <!-- Economy & Landmarks -->
+                        <div>
+                            <h3 class="flex items-center text-2xl font-semibold mb-3">
+                                <i data-lucide="landmark" class="h-6 w-6 mr-3 text-blue-600"></i>
+                                Economy & Landmarks
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Manila's economy is diverse, with major activities in finance, commerce, tourism, and shipping, thanks to the Port of Manila, the largest in the country. The city is home to numerous historical and cultural landmarks.
+                            </p>
+                            <ul class="list-disc list-inside mt-4 space-y-1 text-gray-700">
+                                <li><strong>Intramuros:</strong> The historic walled city containing Fort Santiago and San Agustin Church.</li>
+                                <li><strong>Rizal Park:</strong> A large urban park dedicated to the national hero, José Rizal.</li>
+                                <li><strong>National Museum Complex:</strong> Comprising museums of Fine Arts, Anthropology, and Natural History.</li>
+                                <li><strong>Binondo:</strong> The world's oldest Chinatown, a hub of commerce and cuisine.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- History -->
+                        <div>
+                             <h3 class="flex items-center text-2xl font-semibold mb-3">
+                                <i data-lucide="scroll-text" class="h-6 w-6 mr-3 text-blue-600"></i>
+                                History
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Before Spanish colonization, Manila was the seat of the Kingdom of Maynila, a major trading partner with Asian nations. In 1571, Spanish conquistador Miguel López de Legazpi founded the modern city. It became the capital of the Spanish East Indies for centuries. The city was heavily devastated during the Battle of Manila in World War II but has since been rebuilt and has continued to grow.
+                            </p>
+                        </div>
+
+                        <!-- Geography & Climate -->
+                        <div>
+                             <h3 class="flex items-center text-2xl font-semibold mb-3">
+                                <i data-lucide="mountain-snow" class="h-6 w-6 mr-3 text-blue-600"></i>
+                                Geography & Climate
+                            </h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Manila is located on the eastern shores of Manila Bay. The Pasig River flows through the middle of the city, dividing it into north and south sections. Like the rest of the Philippines, Manila has a tropical climate characterized by a wet and a dry season.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar / Aside -->
+            <aside class="w-full lg:w-1/3 xl:w-1/4 mt-8 lg:mt-0">
+                <div class="bg-white p-6 rounded-2xl shadow-lg sticky top-24">
+                    <h3 class="text-xl font-bold mb-4">Nearby Locations</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-100 transition">
+                                <img src="https://placehold.co/40x40/1abc9c/ffffff?text=QC" alt="Quezon City" class="h-10 w-10 rounded-md object-cover mr-4">
+                                <div>
+                                    <p class="font-semibold">Quezon City</p>
+                                    <p class="text-sm text-gray-500">Most Populous City</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-100 transition">
+                                <img src="https://placehold.co/40x40/3498db/ffffff?text=T" alt="Taguig" class="h-10 w-10 rounded-md object-cover mr-4">
+                                <div>
+                                    <p class="font-semibold">Taguig</p>
+                                    <p class="text-sm text-gray-500">Modern Financial Hub</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-100 transition">
+                                <img src="https://placehold.co/40x40/f1c40f/ffffff?text=P" alt="Pasay" class="h-10 w-10 rounded-md object-cover mr-4">
+                                <div>
+                                    <p class="font-semibold">Pasay</p>
+                                    <p class="text-sm text-gray-500">Entertainment City</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12 border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Digital Gazetteer. All rights reserved.</p>
+            <p class="text-sm">Information current as of June 10, 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
