@@ -3,131 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Gazetteer</title>
+    <title>Explore Taguig City | The Probinsyudad</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
+        /* Applying the Inter font to the whole page */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* light gray background */
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav input[type="search"] {
-            padding: 0.5rem;
-            width: 60%;
-            max-width: 400px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 1rem auto;
-            max-width: 1200px;
-            padding: 0 1rem;
-        }
-        #location-list {
-            flex: 1;
-            min-width: 250px;
-            margin-right: 1rem;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 1rem;
-        }
-        #location-list h2 {
-            margin-top: 0;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        #location-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #location-list li a {
-            display: block;
-            padding: 0.5rem;
-            text-decoration: none;
-            color: #337ab7;
-            border-bottom: 1px solid #eee;
-        }
-        #location-list li a:hover {
-            background-color: #f0f0f0;
-        }
-        main {
-            flex: 3;
-            background: #fff;
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        article header h2 {
-            color: #333;
-            margin-top: 0;
-        }
-        .coordinates {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        .place-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        /* A subtle gradient for the hero section overlay */
+        .hero-gradient {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
         }
     </style>
 </head>
-<body>
+<body class="text-gray-800">
 
-    <header>
-        <h1>Digital Gazetteer</h1>
+    <!-- Header & Hero Section -->
+    <header class="relative bg-cover bg-center h-[50vh] md:h-[60vh] rounded-b-3xl overflow-hidden shadow-lg">
+        <!-- Background Image -->
+        <img src="https://placehold.co/1920x1080/334155/FFFFFF?text=Bonifacio+Global+City+Skyline" 
+             alt="Taguig City Skyline" 
+             class="absolute w-full h-full object-cover">
+        
+        <!-- Overlay -->
+        <div class="absolute w-full h-full hero-gradient"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center p-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-md">Welcome to Taguig City</h1>
+            <p class="mt-4 text-lg md:text-2xl font-light max-w-2xl drop-shadow-sm">The perfect blend of urban progress and provincial charm.</p>
+        </div>
     </header>
 
-    <nav>
-        <form action="#" method="get">
-            <input type="search" id="search-box" name="query" placeholder="Search for a place...">
-        </form>
-    </nav>
-
-    <div class="container">
-        <aside id="location-list">
-            <h2>Browse Locations</h2>
-            <ul>
-                <li><a href="#taguig">Taguig</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/manila.html">Manila</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/cebu_city.html">Cebu City</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/davao_city.html">Davao City</a></li>
-            </ul>
-        </aside>
-
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
         
-       <footer>
-        <p>&copy; 2025 Digital Gazetteer. Current as of June 10, 2025.</p>
+        <!-- About Section -->
+        <section id="about" class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-700 mb-4">The "Probinsyudad" of Metro Manila</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+                Taguig has transformed from a humble fishing village along the shores of Laguna de Bay into one of the Philippines' most important financial and lifestyle districts. Home to the bustling Bonifacio Global City (BGC), it's a hub of culture, innovation, and opportunity, while still retaining its rich history and heritage.
+            </p>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions">
+            <h2 class="text-3xl font-bold text-slate-700 text-center mb-8">Discover the Sights</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: BGC -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=BGC+High+Street" alt="Bonifacio High Street" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Bonifacio Global City</h3>
+                        <p class="text-gray-600">The premier financial district known for its modern skyscrapers, vibrant street art, world-class shopping, and dynamic nightlife.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Venice Grand Canal -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/93c5fd/1e3a8a?text=Venice+Grand+Canal+Mall" alt="Venice Grand Canal Mall" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Venice Grand Canal Mall</h3>
+                        <p class="text-gray-600">Experience a taste of Italy with a romantic gondola ride along the man-made canal in this uniquely themed lifestyle mall.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: The Mind Museum -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/a5b4fc/1e1b4b?text=The+Mind+Museum" alt="The Mind Museum" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">The Mind Museum</h3>
+                        <p class="text-gray-600">A world-class science museum with over 250 interactive exhibits that make learning about science fun for all ages.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Manila American Cemetery -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/d1d5db/1f2937?text=American+Cemetery" alt="Manila American Cemetery" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">American Cemetery & Memorial</h3>
+                        <p class="text-gray-600">A serene and solemn memorial with beautifully manicured lawns, honoring the soldiers who lost their lives in WWII.</p>
+                    </div>
+                </div>
+                
+                 <!-- Card 5: Market! Market! -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/fcd34d/b45309?text=Market!+Market!" alt="Market! Market!" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Market! Market!</h3>
+                        <p class="text-gray-600">A bustling shopping complex where you can find everything from trendy fashion and electronics to regional delicacies.</p>
+                    </div>
+                </div>
+
+                 <!-- Card 6: St. Anne Parish -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/fca5a5/7f1d1d?text=St.+Anne+Parish" alt="St. Anne Parish Church" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">St. Anne Parish Church</h3>
+                        <p class="text-gray-600">A historic church that stands as a testament to Taguig's deep-rooted faith and cultural heritage, dating back centuries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2024 Explore Taguig City. All Rights Reserved.</p>
+            <p class="text-sm text-slate-400 mt-1">Created with passion in Metro Manila.</p>
+        </div>
     </footer>
 
 </body>
