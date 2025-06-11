@@ -3,132 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Gazetteer</title>
+    <title>Philippine Gazetteer - Main Menu</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
+        /* Applying the Inter font and a subtle background pattern */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav input[type="search"] {
-            padding: 0.5rem;
-            width: 60%;
-            max-width: 400px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 1rem auto;
-            max-width: 1200px;
-            padding: 0 1rem;
-        }
-        #location-list {
-            flex: 1;
-            min-width: 250px;
-            margin-right: 1rem;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 1rem;
-        }
-        #location-list h2 {
-            margin-top: 0;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        #location-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #location-list li a {
-            display: block;
-            padding: 0.5rem;
-            text-decoration: none;
-            color: #337ab7;
-            border-bottom: 1px solid #eee;
-        }
-        #location-list li a:hover {
-            background-color: #f0f0f0;
-        }
-        main {
-            flex: 3;
-            background: #fff;
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        article header h2 {
-            color: #333;
-            margin-top: 0;
-        }
-        .coordinates {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        .place-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
         }
     </style>
 </head>
-<body>
+<body class="text-gray-800">
 
-    <header>
-        <h1>Digital Gazetteer</h1>
-    </header>
+    <!-- Main Container -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
 
-    <nav>
-        <form action="#" method="get">
-            <input type="search" id="search-box" name="query" placeholder="Search for a place...">
-        </form>
-    </nav>
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-slate-800">Philippine Gazetteer</h1>
+            <p class="mt-3 text-lg text-slate-600">Select a city to explore its wonders</p>
+        </header>
 
-    <div class="container">
-        <aside id="location-list">
-            <h2>Browse Locations</h2>
-            <ul>
-                <li><a href="#taguig">Taguig</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/manila.html">Manila</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/cebu_city.html">Cebu City</a></li>
-                <li><a href="https://danrosettejr.github.io/gazeeter/davao_city.html">Davao City</a></li>
-            </ul>
-        </aside>
+        <!-- City Navigation Menu -->
+        <main class="w-full max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        
-       <footer>
-        <p>&copy; 2025 Digital Gazetteer. Current as of June 10, 2025.</p>
-    </footer>
+                <!-- Taguig City Card -->
+                <a href="#" class="group block bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
+                            <!-- Heroicon: Building Office 2 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                                <path fill-rule="evenodd" d="M4.5 2.25a.75.75 0 000 1.5v16.5a.75.75 0 001.5 0V21h12V3.75a.75.75 0 000-1.5h-15zM9 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H9zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM9 10.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H9zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM9 15a.75.75 0 000 1.5h.75a.75.75 0 000-1.5H9zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM12 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM12 10.5a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM12 15a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 2.25a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-800">Taguig City</h2>
+                            <p class="text-slate-500">The modern "Probinsyudad"</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Manila Card -->
+                <a href="#" class="group block bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-red-100 text-red-600 p-3 rounded-full">
+                            <!-- Heroicon: Building Library -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                              <path fill-rule="evenodd" d="M4.5 2.25a.75.75 0 000 1.5v16.5a.75.75 0 00.75.75h13.5a.75.75 0 00.75-.75V3.75a.75.75 0 000-1.5h-15zM9 6a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm-.75 3.75a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM9 12a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H9zm-1.5 3a.75.75 0 00.75.75h4.5a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75.75z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-800">Manila</h2>
+                            <p class="text-slate-500">The nation's historic capital</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Cebu City Card -->
+                <a href="#" class="group block bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-amber-100 text-amber-600 p-3 rounded-full">
+                             <!-- Heroicon: Sun -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-800">Cebu City</h2>
+                            <p class="text-slate-500">Queen City of the South</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Davao City Card -->
+                <a href="#" class="group block bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-emerald-100 text-emerald-600 p-3 rounded-full">
+                            <!-- Heroicon: Mountain -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                              <path fill-rule="evenodd" d="M13.22 17.72a.75.75 0 011.06 0l4.25 4.25a.75.75 0 11-1.06 1.06L13.5 19.06l-4.97 4.97a.75.75 0 01-1.06-1.06l5.5-5.5z" clip-rule="evenodd" />
+                              <path fill-rule="evenodd" d="M2.53 17.47a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L2.53 17.47z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-800">Davao City</h2>
+                            <p class="text-slate-500">Crown Jewel of Mindanao</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-slate-500">
+            <p>&copy; 2024 PH Gazetteer. Your guide to the Philippines.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
